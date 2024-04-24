@@ -1,15 +1,19 @@
-* {
+@media screen and (max-width:480px){
+  nav{
+    max-width: 480px;
+    max-height: 40px;
+    font-size: 16px;
+    align-items: center;
+  }
+}
+body {
     margin: 0;
     padding: 0;
-  }
-  
-  body {
     background-color: #8E8FFA;
     min-height: 100vh;
   }
 
   .page {
-    width: 100vw;
     margin: 0 auto;
   }
 
@@ -20,21 +24,23 @@
   h1 {
     font-family: 'Poppins', sans-serif;
     font-size: 54px;
-    font-weight: bold;
-    line-height: 1.6;
     line-height: 81px;
     text-align: center;
     color: #000;
-    padding-top: 40px;
-    padding-bottom: 25px;
+    padding-top: 80px;
     margin-top: 0;
   }
     
-  nav {
+  nav {    
+    top: 0;
+    left: 0;
+    position: fixed;
     height: 78px;
+    width: 100%;
     gap: 0px;
     opacity: 0px;
     font-family: 'Poppins', sans-serif;
+    font-size: 20px;
     color: #000;
     display: flex;
     justify-content: space-between;
@@ -42,7 +48,7 @@
     background-color: #beadfa;
     padding-top: 10px;
     padding-bottom: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
   }
   
   nav ul {
@@ -54,12 +60,29 @@
   nav ul li a {
     text-decoration: none;  
     color: white;
-    font-weight: bold;
+    font-weight: lighter;
   }
   
   nav ul li a:hover {
     color: #000;
     font-weight: bold;
+  }
+
+  input {
+    border-radius: 25px;
+    border: none;
+    height: 100%;
+    padding: 2.5px 28px;
+  }
+  
+  .input-search{
+    margin-bottom: 10px;
+  }
+
+  .input-search img{
+    position: absolute;
+    margin: 8px;
+    width: 15px; 
   }
   
   #user{
@@ -70,19 +93,15 @@
     margin-right: 10%;
   }
     
-  .text{    
-    padding-left: 35%;
-    padding-right: 35%;
-    padding-top: 55px;
-    padding-bottom: 35px;
+  .aboutus{    
+    padding: 18vh 25vw 15vh 25vw;
   }
  
   .tagline {
     text-align: center;
     font-family: 'Poppins', sans-serif; 
     font-style: italic;
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 25px;
     color: white;
     padding-bottom: 40px;
   }
@@ -90,8 +109,8 @@
   .detail{
     text-align: center;
     font-family: 'Poppins', sans-serif; 
-    color: black;
-    padding-bottom: 45px;    
+    font-size: 22px;
+    padding-bottom: 20%;    
   }
   
   .testi{
@@ -107,7 +126,7 @@
   .testi h1 {
     font-family: 'Poppins', sans-serif;
     font-size: 45px;
-    font-weight: bold;
+    font-weight: lighter;
     color: white;
     text-align: center;
     padding-top: 55px;
@@ -118,7 +137,6 @@
     padding-bottom: 10vb;   
     background-color: #C780FA;
     font-family: 'Poppins', sans-serif;
-    font-family: Poppins;
     font-size: 15px;
     font-weight: 400;
     line-height: 37.5px;
@@ -128,17 +146,13 @@
   .flex-container {
     display: flex;
     flex-direction: row;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin: 0 5%;
     padding: 0 4px 10px;
     gap: 50px;
   }
 
   .card {
-    padding-top: 10px;
-    padding-bottom: 50px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 10px 30px 50px 30px;
     background-color: white;
     border-style: solid;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -148,10 +162,11 @@
   }
 
   .container {
-    padding: 20px 16px;
+    padding: 20px 10px;
   }
 
   .container h4 {
+    font-weight: lighter;
     font-style: italic;
     padding-top: 20px;
   }
